@@ -1,0 +1,24 @@
+﻿@model ho.AccountViewModel.AccountViewModel;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @using ( Html.BeginForm("Login", "Account") )
+    {
+        <table>
+            <tr>
+                <td>@Html.LabelFor(acc => acc.Username)</td>
+                <td>@Html.TextBox( acc => acc.Username )</td>
+            </tr>
+        </table>
+    }
+</body>
+</html>
